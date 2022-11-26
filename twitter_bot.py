@@ -50,7 +50,7 @@ class InternetSpeedTwitterBot:
         password.send_keys(Keys.ENTER)
         time.sleep(2)
         if self.down >= PROMISED_DOWN and self.up >= PROMISED_UP:
-            tweet = "Appreciation to @PLDTHome for delivering the promised 50MBPS upload and download speed."
+            tweet = "Appreciation to @PLDTHome for delivering the promised 50MBPS upload and download speeds."
         else:
             tweet = f"@PLDTHome, current download speed: {self.down} and upload speed: {self.up} are below promised 50MBPS speed."
         send_tweet = self.driver.find_element(By.CSS_SELECTOR, 'div[class="public-DraftStyleDefault-block public-DraftStyleDefault-ltr"]')
